@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html>
+ 
+
+<head>
+  <title>My Form</title>
+  <style>
+
+    label {
+      display: block;
+      margin-bottom: 10px;
+    }
+    input[type="text"] {
+      width: 100%;
+      padding: 5px;
+      margin-bottom: 20px;
+    }
+    input[type="SIGN IN"] {
+      background-color :limegreen;
+      color: white;
+      padding: 10px 20px;
+      border: 10px;
+      border-radius: 4px;
+      cursor: pointer;
+    }
+  </style>
+</head>
+
+<body>
+  <p class="outset"></p>
+  <center>
+ <img src="C:/Users/USER/Desktop/compman.jpg"
+  </center>
+  <h3 style="text-align: center "><b>Sign in to continue</b></h3>
+
+<center>
+
+  <form id="myForm">
+    <textarea name="compliments" id="" cols="80" rows="2">Email</textarea><br>
+    <textarea name="compliments" id="" cols="80" rows="2">Password</textarea>
+
+  </center>
+  
+      <input type="checkbox"> 
+      <label for="">Keep me signed in</label>
+          <p>
+            <center>
+            <input type="submit" value="SIGN IN"><a href="forgot password"
+            </center>
+            
+  </form>
+
+  <script>
+    <div class=container>
+    const form = document.getElementById("myForm");
+    form.addEventListener("SIGN IN", (event) => {
+      event.preventDefault();
+      
+      const Email = form.elements["Email"].value;
+      const Password = form.elements["Password"].value;
+      
+      localStorage.setItem("Email", Email);
+      localStorage.setItem("Password", Password);
+      
+  
+    });
+    </script><br>
+  
+ <h4 style="text align:center" ;></h4><a href="https://www.google.com/">Forgot password?</a>
+ </div>
+
+</body>
+</html>
